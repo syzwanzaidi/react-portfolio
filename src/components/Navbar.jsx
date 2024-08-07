@@ -14,7 +14,6 @@ export const Navbar = () => {
             <FaLinkedin/>
             <FaGithub/>
             <FaSquareXTwitter/>
-            <FaInstagram/>
         </div>
     </nav>
   )
