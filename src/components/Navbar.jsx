@@ -11,10 +11,14 @@ export const Navbar = () => {
         </div>
 
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+          <a href="https://www.linkedin.com/in/syazwan-syahmi-7352882b4" target="_blank" rel="noopener noreferrer">
             <FaLinkedin/>
+          </a>
+
+          <a href="https://github.com/syzwanzaidi" target="_blank" rel="noopener noreferrer">
             <FaGithub/>
-            <FaSquareXTwitter/>
-            <FaInstagram/>
+          </a>
+          
         </div>
     </nav>
   )

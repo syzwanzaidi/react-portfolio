@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/syazwanpp.png";
+import profilePic from "../assets/syazwanpp.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -55,6 +55,8 @@ export const Hero = () => {
                         initial={{x: 100, opacity: 0}}
                         animate={{x: 0, opacity: 1}}
                         transition={{duration: 1, delay: 1.2}}
+                        width={500}
+                        height={500}
                     />
                 </div>
             </div>
