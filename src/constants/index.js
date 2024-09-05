@@ -52,7 +52,7 @@ export const PROJECTS = [
     "technologies": ["C++"]
   },
   {
-    "title": "School Driving System",
+    "title": "Driving School System",
     "image": project4,
     "description": "A software application for managing driving school operations, including scheduling lessons, tracking student progress, and managing instructor assignments.",
     "technologies": ["Java"]
@@ -61,7 +61,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Lot 8906, Taman Raya, Wakaf Tapai, 21040 Marang, Terengganu",
+  address: "Marang, Terengganu",
   phoneNo: "+60 111 101 0214 ",
-  email: "syzwanzaidi29@gmail.com",
+  email: "syzwandev@gmail.com",
 };
