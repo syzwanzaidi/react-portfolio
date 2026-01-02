@@ -11,7 +11,7 @@ export const Navbar = () => {
         </div>
 
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-          <a href="https://www.linkedin.com/in/syazwan-syahmi-7352882b4" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/muhammad-syazwan-syahmi-bin-mat-zaidi-7352882b4/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin/>
           </a>
 

@@ -3,65 +3,68 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `As a dedicated full-stack developer, I specialize in building robust and scalable web applications. With 2 years of hands-on experience, I have honed my expertise in front-end technologies such as React, Next.js, and TypeScript, as well as back-end technologies like Node.js, Laravel, MySQL, and MySQL WorkBench. My passion lies in crafting innovative solutions that enhance business growth and provide exceptional user experiences.`;
+export const HERO_CONTENT = `
+Computer Science (Netcentric Computing) student with hands-on experience in building and maintaining web-based systems.
+Experienced in PHP, Laravel, JavaScript, and MySQL, with internship exposure to real production applications.
+Interested in backend development, system integration, and practical IT solutions.
+`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for creating efficient and user-friendly web applications. With 2 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, Laravel, MySQL, and MySQL Workbench. My journey in web development began with a deep curiosity about how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `
+I am a Computer Science (Netcentric Computing) student from UiTM Shah Alam with practical experience in developing web-based systems through academic projects and an industry internship.
+
+During my internship, I contributed to real production systems using Laravel, PHP, React.js, and MySQL, where I worked on both frontend and backend modules, database design, and system integration. I am particularly interested in backend development, system logic, and understanding how applications work at a deeper level.
+
+I am currently seeking a 14-week internship placement from 30 March 2026 to 3 July 2026, where I can contribute as a Web Development or IT Intern while gaining hands-on industry experience.
+`;
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Present",
-    role: "Freelance Full Stack Developer",
-    company: "Various Clients",
-    description: `Designed and developed full-stack web applications for diverse clients. Utilized JavaScript, React.js, and Node.js to create dynamic and responsive user interfaces. Implemented RESTful APIs and integrated with databases like MongoDB and PostgreSQL. Collaborated with clients to define project requirements and deliver solutions on time.`,
-    technologies: ["JavaScript", "Php", "Laravel", "React.js", "Next.js", "Node.js", "MySql", "TypeScript"],
+    year: "Sep 2023 – Mar 2024",
+    role: "Full Stack Developer Intern",
+    company: "Isianpadu Systems Sdn. Bhd.",
+    description: `
+Contributed to the development of PUSPAL Online System, a government web platform for managing foreign artist performances and filming applications in Malaysia.
+Worked on frontend and backend modules using Laravel (PHP), React.js, and MySQL.
+Implemented database models, controllers, APIs, and services to support application workflows and data management.
+Participated in weekly client meetings to present progress and gather feedback.
+    `,
+    technologies: ["PHP", "Laravel", "MySQL", "React.js", "JavaScript", "Git"],
   },
-  {
-    year: "2023 - 2024",
-    role: "Junior Full Stack Developer",
-    company: "Isianpadu System SDN BHD",
-    description: `Designed and developed a landing page and filming application for PUSPAL. Collaborated with the team to enhance user interface and experience, and implemented backend features using Laravel.`,
-    technologies: ["HTML", "CSS","Php", "React", "Node.js", "TypeScript", "MySQL", "Laravel", "GitLab"],
-  },  
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "UiTMarketplace – Location-Based Online Marketplace",
     image: project1,
     description:
-      "A fully functional e-commerce website called JDSneakerStore with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MySQL", "Php"],
+      "A web-based marketplace system developed for the UiTM community with location-based item visibility, product listings, cart and checkout flow, and order management.",
+    technologies: ["Laravel", "PHP", "MySQL", "JavaScript"],
   },
   {
-    "title": "Cinema Movie Ticket System",
-    "image": project2,
-    "description": "A software system designed for booking and managing cinema movie tickets, featuring seat selection, payment processing, and real-time availability tracking.",
-    "technologies": ["C++"]
-  },  
+    title: "Unispa Booking System",
+    image: project2,
+    description:
+      "A web-based booking system for UiTM spa services, featuring service scheduling, admin management, and booking control.",
+    technologies: ["Laravel", "PHP", "MySQL"],
+  },
   {
-    title: "Portfolio Website",
+    title: "IoT Smart Bike Lock System",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
+      "An IoT-based smart bike lock system using ESP32, fingerprint sensor, and GPS module to enable secure access control and location tracking.",
+    technologies: ["ESP32", "IoT", "Embedded Systems"],
   },
   {
-    "title": "Restaurant Ordering System",
-    "image": project2,
-    "description": "A system designed for managing restaurant orders, allowing customers to place orders, customize meals, and track order status in real-time.",
-    "technologies": ["C++"]
+    title: "Personal Portfolio Website",
+    image: project4,
+    description:
+      "A personal portfolio website to showcase projects, skills, and experience.",
+    technologies: ["React", "JavaScript", "CSS"],
   },
-  {
-    "title": "Driving School System",
-    "image": project4,
-    "description": "A software application for managing driving school operations, including scheduling lessons, tracking student progress, and managing instructor assignments.",
-    "technologies": ["Java"]
-  }
-  
 ];
 
 export const CONTACT = {
-  address: "Marang, Terengganu",
-  phoneNo: "+60 111 101 0214 ",
-  email: "syzwandev@gmail.com",
+  address: "Seri Kembangan, Selangor, Malaysia",
+  phoneNo: "+60 11-1101 0214",
+  email: "syzwanzaidi29@gmail.com",
 };

@@ -46,32 +46,6 @@ export const Technologies = () => {
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
 
-                <motion.div
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                    variants={iconVariants(3)}
-                    initial="initial"
-                    animate="animate"
-                >
-                    <TbBrandNextjs className="text-7xl" />
-                </motion.div>
-
-                <motion.div
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                    variants={iconVariants(5)}
-                    initial="initial"
-                    animate="animate"
-                >
-                    <SiMongodb className="text-7xl text-green-500" />
-                </motion.div>
-
-                <motion.div
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                    variants={iconVariants(6)}
-                    initial="initial"
-                    animate="animate"
-                >
-                    <FaNodeJs className="text-7xl text-green-500" />
-                </motion.div>
 
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
