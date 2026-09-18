@@ -24,6 +24,11 @@ export const Experience = () => {
                     transition={{duration:1}}
                     >
                         <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
+                        {experience.year.includes("Present") && (
+                            <span className="inline-block rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-medium text-emerald-400">
+                                Current
+                            </span>
+                        )}
                     </motion.div>
                     <motion.div 
                     className="w-full max-w-xl lg:w-3/4"
@@ -32,12 +37,16 @@ export const Experience = () => {
                     transition={{duration:1}}
                     >
                         <h6 className="mb-2 font-semibold">
-                            {experience.role} - 
+                            {experience.role} -
                             <span className="text-sm text-purple-100">
                                 {experience.company}
                             </span>
                         </h6>
-                        <p className="mb-4 text-neutral-400">{experience.description}</p>
+                        <ul className="mb-4 list-disc space-y-1.5 pl-5 text-neutral-400 marker:text-neutral-600">
+                            {experience.description.map((line, i) => (
+                                <li key={i}>{line}</li>
+                            ))}
+                        </ul>
                         <div className="flex flex-wrap">
                             {experience.technologies.map((tech, index) => (
                                 <span 
