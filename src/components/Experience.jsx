@@ -1,66 +1,56 @@
-import React from 'react'
-import { EXPERIENCES } from '../constants'
-import { motion } from "framer-motion";
+import { EXPERIENCES } from "../data";
+import { SectionHeading } from "./ui/SectionHeading";
+import { Reveal } from "./ui/Reveal";
+import { Badge } from "./ui/Badge";
 
 export const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
-        <motion.h2 
-        className="my-20 text-center text-4xl"
-        whileInView={{ opacity: 1, y: 0}}
-        initial= {{opacity:0, y: -100}}
-        transition={{ duration: 0.5 }}
-        >
-            Experience
-        </motion.h2>
-        
-        <div>
-            {EXPERIENCES.map((experience, index) => (
-                <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                    <motion.div 
-                    className="w-full lg:w-1/4"
-                    whileInView={{opacity: 1, x:0}}
-                    initial={{opacity:0, x:-100}}
-                    transition={{duration:1}}
-                    >
-                        <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-                        {experience.year.includes("Present") && (
-                            <span className="inline-block rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-medium text-emerald-400">
-                                Current
-                            </span>
-                        )}
-                    </motion.div>
-                    <motion.div 
-                    className="w-full max-w-xl lg:w-3/4"
-                    whileInView={{opacity:1, x:0}}
-                    initial={{opacity:0, x:100}}
-                    transition={{duration:1}}
-                    >
-                        <h6 className="mb-2 font-semibold">
-                            {experience.role} -
-                            <span className="text-sm text-purple-100">
-                                {experience.company}
-                            </span>
-                        </h6>
-                        <ul className="mb-4 list-disc space-y-1.5 pl-5 text-neutral-400 marker:text-neutral-600">
-                            {experience.description.map((line, i) => (
-                                <li key={i}>{line}</li>
-                            ))}
-                        </ul>
-                        <div className="flex flex-wrap">
-                            {experience.technologies.map((tech, index) => (
-                                <span 
-                                key={index} 
-                                className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-cyan-500"
-                                >
-                                {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </motion.div>
-                </div>
-            ))}
+    <div id="experience" className="scroll-mt-24 border-b border-neutral-900 pb-4">
+      <SectionHeading eyebrow="Where I've worked" title="Experience" />
+
+      <div className="relative mx-auto max-w-3xl">
+        <div className="absolute bottom-0 left-[7px] top-2 hidden w-px bg-neutral-800 sm:block" />
+
+        <div className="space-y-12">
+          {EXPERIENCES.map((experience, index) => (
+            <Reveal key={experience.company} direction="up" delay={index * 0.1} className="relative sm:pl-10">
+              <span
+                className={`absolute left-0 top-2 hidden h-4 w-4 rounded-full border-2 sm:block ${
+                  experience.current
+                    ? "animate-pulse border-emerald-400 bg-emerald-500"
+                    : "border-neutral-700 bg-neutral-900"
+                }`}
+              />
+
+              <div className="mb-1 flex flex-wrap items-center gap-3">
+                <p className="text-sm text-neutral-400">{experience.year}</p>
+                {experience.current && (
+                  <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-medium text-emerald-400">
+                    Current
+                  </span>
+                )}
+              </div>
+
+              <h6 className="mb-2 font-semibold text-neutral-100">
+                {experience.role} -{" "}
+                <span className="text-sm text-purple-300">{experience.company}</span>
+              </h6>
+
+              <ul className="mb-4 list-disc space-y-1.5 pl-5 text-neutral-400 marker:text-neutral-600">
+                {experience.description.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-2">
+                {experience.technologies.map((tech) => (
+                  <Badge key={tech} label={tech} />
+                ))}
+              </div>
+            </Reveal>
+          ))}
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
