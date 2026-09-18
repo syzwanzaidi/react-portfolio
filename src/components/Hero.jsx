@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import profilePic from "../assets/syazwanpp.jpg";
+import profilePic from "../assets/profile.jpg";
 import { PROFILE } from "../data";
 import { FaChevronDown, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -118,7 +118,7 @@ export const Hero = () => {
               <img
                 src={profilePic}
                 alt={PROFILE.name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-10">
                 <span className="flex items-center gap-1.5 text-sm text-neutral-200">

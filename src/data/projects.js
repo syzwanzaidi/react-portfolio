@@ -3,7 +3,7 @@ export const PROJECT_CATEGORIES = ["All", "AI & Automation", "Web Platforms"];
 export const PROJECTS = [
   {
     key: "hustler",
-    title: "USTLER",
+    title: "Hustler",
     subtitle: "AI Investment Laboratory",
     categories: ["AI & Automation"],
     featured: true,

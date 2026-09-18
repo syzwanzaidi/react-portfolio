@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.jpg";
+import aboutImg from "../assets/about1.jpg";
 import { ABOUT, STATS } from "../data";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./ui/Reveal";
@@ -13,11 +13,11 @@ export const About = () => {
         <Reveal direction="left" className="w-full lg:w-2/5">
           <div className="relative mx-auto max-w-sm">
             <div className="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 blur-2xl" />
-            <div className="aspect-square overflow-hidden rounded-2xl border border-neutral-800">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
               <img
                 src={aboutImg}
-                alt="Syazwan coding at night"
-                className="h-full w-full object-cover"
+                alt="Syazwan discussing a robotics project"
+                className="h-full w-full object-cover object-[center_25%]"
               />
             </div>
             <div className="absolute -bottom-4 left-1/2 w-max -translate-x-1/2 rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-xs text-neutral-300 shadow-lg">
